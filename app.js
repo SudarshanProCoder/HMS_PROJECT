@@ -12,7 +12,7 @@ var expressValidator = require('express-validator');
 var sweetalert = require('sweetalert2');
 var app = express();
 
-
+var PORT = process.env.PORT || 5000;
 
 var bodyParser = require('body-parser');
 
@@ -51,7 +51,7 @@ app.use(cookie());
 
 
 
-var server = app.listen(3000, function() {
+var server = app.listen(PORT, function() {
 
     console.log('server started');
 });
